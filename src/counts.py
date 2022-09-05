@@ -7,6 +7,10 @@ x = sys.stdin.read().replace("\n", "")
 count = {}
 # Count the characters in `x`` and put the counts in `counts`.
 # Your code goes here.
+list_x= set((x))
+count = dict.fromkeys(list_x, 0)
+for i in x: 
+    count[i] += 1
 
 
 # Get the keys, i.e., the characters, in sorted order
