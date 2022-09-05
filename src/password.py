@@ -8,6 +8,9 @@ password = sys.argv[1]
 is_valid = False
 
 # Do all the requirement checks here.
+upper = 0
+lower = 0
+special_c = 0
 for c in password:
     if(c.islower()):
         lower = 1
